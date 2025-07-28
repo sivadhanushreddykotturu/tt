@@ -6,6 +6,12 @@ import requests
 from io import BytesIO
 
 app = FastAPI()
+print("✅ FastAPI app starting...")
+
+# Health check root route
+@app.get("/")
+def health():
+    return {"message": "Backend running ✅"}
 
 # Allow API access from any frontend (e.g., Expo app)
 app.add_middleware(
