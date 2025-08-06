@@ -123,4 +123,4 @@ def fetch_timetable(
     return {
         "success": True,
         "timetable": timetable
-    }s
+    }
